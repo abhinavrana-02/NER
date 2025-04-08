@@ -20,14 +20,14 @@ ruler = nlp.add_pipe("entity_ruler", before="ner")
 
 # Load lexicon patterns (case-insensitive)
 patterns = []
-patterns += load_lexicon("lexicons/indian_cities.txt", "GPE")
-patterns += load_lexicon("lexicons/indian_names.txt", "PERSON")
-patterns += load_lexicon("lexicons/indian_organizations.txt", "ORG")
-patterns += load_lexicon("lexicons/computer_languages.txt", "PROG_LANG")
-patterns += load_lexicon("lexicons/music_instruments.txt", "INSTRUMENT")
-patterns += load_lexicon("lexicons/sports.txt", "sport")
-patterns += load_lexicon("lexicons/automobiles.txt", "automobile")
-patterns += load_lexicon("lexicons/food.txt", "food")
+patterns += load_lexicon("nlp/lexicons/indian_cities.txt", "GPE")
+patterns += load_lexicon("nlp/lexicons/indian_names.txt", "PERSON")
+patterns += load_lexicon("nlp/lexicons/indian_organizations.txt", "ORG")
+patterns += load_lexicon("nlp/lexicons/computer_languages.txt", "PROG_LANG")
+patterns += load_lexicon("nlp/lexicons/music_instruments.txt", "INSTRUMENT")
+patterns += load_lexicon("nlp/lexicons/sports.txt", "sport")
+patterns += load_lexicon("nlp/lexicons/automobiles.txt", "automobile")
+patterns += load_lexicon("nlp/lexicons/food.txt", "food")
 
 ruler.add_patterns(patterns)
 
